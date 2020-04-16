@@ -1,14 +1,14 @@
-import parser from 'urlencoded-body-parser'
+import {
+  createBusinessDocumentHeaderXml,
+  createTrawlerXml,
+  createEpcClassXml,
+  createLocationHeaderXml,
+  createObjectEventXml,
+  createTransformationEventXml,
+  createAggregationEventXml
+} from '@gftc/trawler'
 
-// import {
-//   createBusinessDocumentHeaderXml,
-//   createTrawlerXml,
-//   createEpcClassXml,
-//   createLocationHeaderXml,
-//   createObjectEventXml,
-//   createTransformationEventXml,
-//   createAggregationEventXml
-// } from '@gftc/trawler'
+import { parse } from '@multisolution/multipart-parser'
 
 import nextConnect from 'next-connect'
 
@@ -16,50 +16,55 @@ const handler = nextConnect()
 
 handler.post(async (req, res) => {
   try {
-    req.data = await parser(req)
-    console.log(req.data);
-        
-    // const {
-    //   businessHeaderCsv,
-    //   epcClassCsv,
-    //   locationCsv,
-    //   objectEventCsv,
-    //   transformationEventCsv,
-    //   aggregationEventCsv
-    // } = req.body
+    const data = parse(req.body)
 
-    // const [
-    //   bdhXml,
-    //   epcClassXml,
-    //   locationXml,
-    //   objectEventXmlList,
-    //   transformationEventXmlList,
-    //   aggregationEventXmlList
-    // ] = await Promise.all([
-    //   createBusinessDocumentHeaderXml(businessHeaderCsv),
-    //   createEpcClassXml(epcClassCsv),
-    //   createLocationHeaderXml(locationCsv),
-    //   createObjectEventXml(objectEventCsv),
-    //   createTransformationEventXml(transformationEventCsv),
-    //   createAggregationEventXml(aggregationEventCsv)
-    // ])
+    console.log(data)
 
-    // const result = createTrawlerXml({
-    //   bdhXml,
-    //   epcClassXml,
-    //   locationXml,
-    //   xmlList: [
-    //     ...objectEventXmlList,
-    //     ...transformationEventXmlList,
-    //     ...aggregationEventXmlList
-    //   ]
+    const {
+      businessHeaderCsv,
+      epcClassCsv,
+      locationCsv,
+      objectEventCsv,
+      transformationEventCsv,
+      aggregationEventCsv
+    } = data
+
+    const [
+      bdhXml,
+      epcClassXml,
+      locationXml,
+      objectEventXmlList,
+      transformationEventXmlList,
+      aggregationEventXmlList
+    ] = await Promise.all([
+      createBusinessDocumentHeaderXml(businessHeaderCsv.value),
+      createEpcClassXml(epcClassCsv.value),
+      createLocationHeaderXml(locationCsv.value),
+      createObjectEventXml(objectEventCsv.value),
+      createTransformationEventXml(transformationEventCsv.value),
+      createAggregationEventXml(aggregationEventCsv.value)
+    ])
+
+    const result = createTrawlerXml({
+      bdhXml,
+      epcClassXml,
+      locationXml,
+      xmlList: [
+        ...objectEventXmlList,
+        ...transformationEventXmlList,
+        ...aggregationEventXmlList
+      ]
+    })
+
+    // res.json({
+    //   ok: true,
+    //   // data
+    //   result
     // })
 
-    res.json({
-      ok: true,
-      // data
-      // result
-    })
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'application/xml')
+    res.end(result)
   } catch (error) {
     res.json({
       ok: false,

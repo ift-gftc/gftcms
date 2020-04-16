@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "@gftc/trawler": "^1.0.0",
+    "@multisolution/multipart-parser": "^1.0.5",
+    "formidable": "^1.2.2",
     "next": "9.3.5",
     "next-connect": "^0.6.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
   },
   "devDependencies": {
     "@types/node": "^13.11.1",
