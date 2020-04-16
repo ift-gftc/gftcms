@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "moduleResolution": "node",
+      "newLine": "LF",
+      "sourceMap": true,
+      "declaration": true,
+      "outDir": "lib",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ]
+  },
+  "exclude": [
+      "node_modules",
+      "lib"
+  ]
+}

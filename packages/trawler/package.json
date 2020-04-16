@@ -1,0 +1,26 @@
+{
+  "name": "@gftc/trawler",
+  "version": "1.0.0",
+  "description": "Trawler library to parse CSV to EPCIS XML",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "author": "Louis Vichy",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "ava",
+    "watch": "tsc -w && ava --watch"
+  },
+  "ava": {
+    "typescript": {
+      "rewritePaths": {
+        "src/": "lib/"
+      }
+    }
+  },
+  "devDependencies": {
+    "ava": "^3.7.0",
+    "@ava/typescript": "^1.1.1",
+    "typescript": "^3.8.3"
+  }
+}
