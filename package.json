@@ -1,22 +1,7 @@
 {
-  "name": "gftcms",
-  "version": "0.1.0",
+  "name": "root",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "neat-csv": "^5.2.0",
-    "next": "9.3.1",
-    "next-connect": "^0.6.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  },
   "devDependencies": {
-    "@types/node": "^13.9.3",
-    "@types/react": "^16.9.25",
-    "typescript": "^3.8.3"
+    "lerna": "^3.20.2"
   }
 }
