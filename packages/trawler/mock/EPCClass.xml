@@ -1,0 +1,58 @@
+<Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass">
+  <VocabularyElementList>
+    <VocabularyElement id="urn:epc:id:pgln:0048000.1000001">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">YFT</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Yellowfin Tuna</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Thunnus albacares</attribute>
+<attribute id="urn:epcglobal:cbv:mda#tradeItemConditionCode">WHL</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000002">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">YFT</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Yellowfin Tuna Fillet</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Thunnus albacares</attribute>
+<attribute id="urn:epcglobal:cbv:mda#tradeItemConditionCode">FIL</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000010">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Non-GMO Vegetables</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000003">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Vegetarian Fish Feed</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000004">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">SAL</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Salmon Fryling</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Salmo Salar</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000005">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">SAL</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Antlantic Salmon</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Salmo Salar</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000006">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">SAL</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Antlantic Salmon Fillet</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Salmo Salar</attribute>
+
+</VocabularyElement>
+<VocabularyElement id="urn:epc:id:pgln:0048000.1000007">
+<attribute id="urn:epcglobal:cbv:mda#informationProvider">urn:epc:id:pgln:8004030.0</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesCode">YFT</attribute>
+<attribute id="urn:epcglobal:cbv:mda#descriptionShort">Canned Tuna</attribute>
+<attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">Thunnus albacares</attribute>
+
+</VocabularyElement>
+  </VocabularyElementList>
+</Vocabulary>

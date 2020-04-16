@@ -1,0 +1,7 @@
+eventId,action,bizStep,informationProvider,productOwner,parentID,eventTime,eventTimeZoneOffset,disposition,childEPCs,readPoint,bizLocation,extension,,,,,,,
+,,,,,,,,,epc,id,id,childQuantityList,,,certificationList,,,,
+,,,,,,,,,,,,quantityElement,,,certification,,,,
+,,,,,,,,,,,,epcClass,quantity,uom,certificationType,certificationAgency,certificationIdentification,certificationStandard,certificationValue
+,,,,,,,,,,,,,,,,,,,
+,ADD,urn:epcglobal:cbv:bizstep:packing,urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:8004030.0,urn:epc:id:sscc:8004030.1302011835,2020-03-30,+11:00,,,,urn:epc:id:sgln:8004030.000002,urn:epc:id:pgln:0048000.1000007.CANS001,500,KGM,urn:gdst:certType:harvestCoC,MSC,MSC-93131,MSC CoC Standard,123
+,,,,,,,,,,,,urn:epc:id:pgln:0048000.1000006.SAL_FILLET_001,600,KGM,,,,,

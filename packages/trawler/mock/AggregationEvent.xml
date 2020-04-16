@@ -1,0 +1,34 @@
+<AggregationEvent>
+<eventTime>2020-03-30</eventTime> 
+<eventTimeZoneOffset>+11:00</eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+
+
+<action>ADD</action>
+<bizStep>urn:epcglobal:cbv:bizstep:packing</bizStep>
+<disposition></disposition>
+<parentID>urn:epc:id:sscc:8004030.1302011835</parentID>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000002</id></bizLocation>
+<extension><childQuantityList><quantityElement><epcClass>urn:epc:id:pgln:0048000.1000007.CANS001</epcClass>
+  <quantity>500</quantity>
+  <uom>KGM</uom>
+</quantityElement>
+<quantityElement><epcClass>urn:epc:id:pgln:0048000.1000006.SAL_FILLET_001</epcClass>
+  <quantity>600</quantity>
+  <uom>KGM</uom>
+</quantityElement></childQuantityList>
+<cbvmda:certificationList><cbvmda:certification>
+  <gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+  <cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+  <cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+  <cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard>
+  <cbvmda:certificationValue>123</cbvmda:certificationValue>
+</cbvmda:certification></cbvmda:certificationList></extension>
+<gdst:productOwner>urn:epc:id:pgln:8004030.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</AggregationEvent>

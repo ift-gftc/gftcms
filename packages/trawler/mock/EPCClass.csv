@@ -1,0 +1,11 @@
+informationProvider,id,speciesForFisheryStatisticsPurposesCode,descriptionShort,speciesForFisheryStatisticsPurposesName,tradeItemConditionCode,additionalTradeItemIdentification ,preservationTechniqueCode,grossWeight,
+,,,,,,,,measurement,
+,,,,,,,,value,unitCode
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000001,YFT,Yellowfin Tuna,Thunnus albacares,WHL,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000002,YFT,Yellowfin Tuna Fillet,Thunnus albacares,FIL,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000010,,Non-GMO Vegetables,,,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000003,,Vegetarian Fish Feed,,,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000004,SAL,Salmon Fryling,Salmo Salar,,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000005,SAL,Antlantic Salmon,Salmo Salar,,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000006,SAL,Antlantic Salmon Fillet,Salmo Salar,,,,,
+urn:epc:id:pgln:8004030.0,urn:epc:id:pgln:0048000.1000007,YFT,Canned Tuna,Thunnus albacares,,,,0.2,KGM

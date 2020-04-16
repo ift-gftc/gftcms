@@ -2,8 +2,9 @@
   "name": "@gftc/trawler",
   "version": "1.0.0",
   "description": "Trawler library to parse CSV to EPCIS XML",
-  "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "author": "Louis Vichy",
   "license": "MIT",
   "scripts": {
@@ -20,8 +21,16 @@
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
+    "@types/luxon": "^1.22.0",
+    "@types/sinon": "^9.0.0",
     "ava": "^3.7.0",
     "concurrently": "^5.1.0",
+    "fs-extra": "^9.0.0",
+    "sinon": "^9.0.2",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "luxon": "^1.23.0",
+    "neat-csv": "^5.2.0"
   }
 }

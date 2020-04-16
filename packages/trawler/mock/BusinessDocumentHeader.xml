@@ -1,0 +1,25 @@
+<sbdh:StandardBusinessDocumentHeader>
+  <sbdh:HeaderVersion>1.0</sbdh:HeaderVersion>
+  <sbdh:Sender>
+      <sbdh:Identifier>8004030.00000</sbdh:Identifier>
+      <sbdh:ContactInformation>
+          <sbdh:Contact>Adam H</sbdh:Contact>
+          <sbdh:EmailAddress>adam@fish.com</sbdh:EmailAddress>
+      </sbdh:ContactInformation>
+  </sbdh:Sender>
+  <sbdh:Receiver>
+      <sbdh:Identifier>0637196.000004</sbdh:Identifier>
+      <sbdh:ContactInformation>
+          <sbdh:Contact>Amy Shu</sbdh:Contact>
+          <sbdh:EmailAddress>amy@pro.com</sbdh:EmailAddress>
+      </sbdh:ContactInformation>
+  </sbdh:Receiver>
+  <sbdh:DocumentIdentification>
+      <sbdh:Standard>GS1</sbdh:Standard>
+      <sbdh:TypeVersion>3.0</sbdh:TypeVersion>
+      <sbdh:InstanceIdentifier>9999</sbdh:InstanceIdentifier>
+      <sbdh:Type>Seafood Traceability</sbdh:Type>
+      <sbdh:MultipleType>false</sbdh:MultipleType>
+      <sbdh:CreationDateAndTime>2020-04-16T03:19:13.925-07:00</sbdh:CreationDateAndTime>
+  </sbdh:DocumentIdentification>
+</sbdh:StandardBusinessDocumentHeader>

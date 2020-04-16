@@ -1,0 +1,376 @@
+<ObjectEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>ADD</action>
+
+<bizStep>urn:gdst:bizStep:fishingEvent</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:7700-vc3-43d-1192.001</id></bizLocation>
+
+
+
+
+<cbvmda:transshipStartDate>WHO Human Welfare Policy</cbvmda:transshipStartDate>
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000001.TUNA001</epcClass>
+<quantity>1000</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+<sourceList><source type="urn:epcglobal:cbv:sdt:2020-03-27"></source></sourceList>
+
+<ilmd>
+          <cbvmda:vesselCatchInformationList><cbvmda:vesselCatchInformation>
+<cbvmda:vesselName>Example Fishing Vessel</cbvmda:vesselName>
+<cbvmda:vesselID>IMO.1234567890</cbvmda:vesselID>
+<gdst:imoNumber>IMO.1234567890</gdst:imoNumber>
+<cbvmda:vesselFlagState>US</cbvmda:vesselFlagState>
+<gdst:vesselPublicRegistry>vesselPublicRegistry</gdst:vesselPublicRegistry>
+<gdst:gpsAvailability>YES</gdst:gpsAvailability>
+<gdst:satelliteTrackingAuthority>http://vessel-tracker-example.com</gdst:satelliteTrackingAuthority>
+<cbvmda:economicZone>EU</cbvmda:economicZone>
+<gdst:fisheryImprovementProject>fip</gdst:fisheryImprovementProject>
+<gdst:rmfoArea>GRL02</gdst:rmfoArea>
+<gdst:subnationalPermitArea>GRL02-004</gdst:subnationalPermitArea>
+<cbvmda:catchArea>FAO.71</cbvmda:catchArea>
+<cbvmda:fishingGearTypeCode>PS</cbvmda:fishingGearTypeCode>
+</cbvmda:vesselCatchInformation></cbvmda:vesselCatchInformationList>
+
+<cbvmda:harvestStartDate>MARINE_FISHERY</cbvmda:harvestStartDate>
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:fishingAuth</gdst:certificateType>
+<cbvmda:certificationStandard>US Fishing Authority Authorization</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Fishing Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>10</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>FA-01928374</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>
+<cbvmda:certificationStandard>US FA Harvest Certificate Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Fishing Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-65748392</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+        </ilmd></extension>
+<gdst:humanWelfarePolicy>2020-03-27</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:gdst:party:7700-vc3-43d-1192.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:gdst:bizStep:transshipment</bizStep>
+<disposition>urn:epcglobal:cbv:disp:entered_commerce</disposition>
+
+<readPoint><id>geo:-8.2275465,157.2086</id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:7700-vc3-43d-1192.002</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:transshipmentAuth</gdst:certificateType>
+<cbvmda:certificationStandard>US TransShipment Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Trans Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>47</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>USTA-03213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>56</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-10123122</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>102938</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+<cbvmda:transshipStartDate>WHO Human Welfare Policy</cbvmda:transshipStartDate>
+<cbvmda:transshipEndDate>owning_party</cbvmda:transshipEndDate>
+<cbvmda:landingEndDate>urn:gdst:party:7700-vc3-43d-1192.0</cbvmda:landingEndDate>
+<cbvmda:landingStartDate>owning_party</cbvmda:landingStartDate>
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000002.TUNA_FILLET_001</epcClass>
+<quantity>750</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+<sourceList><source type="urn:epcglobal:cbv:sdt:">2020-03-27</source></sourceList>
+<destinationList><destination type="urn:epcglobal:cbv:sdt:2020-03-27">
+              
+            </destination></destinationList>
+</extension>
+
+<gdst:productOwner>urn:gdst:party:7700-vc3-43d-1192.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:epcglobal:cbv:bizstep:landing</bizStep>
+<disposition></disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000001</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:landingAuth</gdst:certificateType>
+<cbvmda:certificationStandard>US Landing Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Landing Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>47</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>USLA-103213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>102923</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+<cbvmda:transshipStartDate>WHO Human Welfare Policy</cbvmda:transshipStartDate>
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000002.TUNA_FILLET_001</epcClass>
+<quantity>750</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+
+<destinationList><destination type="urn:epcglobal:cbv:sdt:">
+              2020-03-27
+            </destination></destinationList>
+<ilmd>
+          <productionMethodForFishAndSeafoodCode>SB NOR</productionMethodForFishAndSeafoodCode>
+<cbvmda:harvestEndDate>2020-03-27</cbvmda:harvestEndDate>
+        </ilmd></extension>
+
+<gdst:productOwner>urn:epc:id:pgln:8004030.00000</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-03-28</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+<disposition></disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000002</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-987666</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000002.TUNA_FILLET_001</epcClass>
+<quantity>750</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+
+
+</extension>
+
+<gdst:productOwner>urn:epc:id:pgln:8004030.00000</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-01-02</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:gdst:bizStep:hatching</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:1122-bu5-9d3-9992.002</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>
+<cbvmda:certificationStandard>US Hatchery Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Hatchery Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-653213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+<cbvmda:transshipStartDate>WHO Human Welfare Policy</cbvmda:transshipStartDate>
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000004.LOT302</epcClass>
+<quantity>100</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+<sourceList><source type="urn:epcglobal:cbv:sdt:2020-01-02"></source></sourceList>
+
+<ilmd>
+          <gdst:broodstockSource>Domestic</gdst:broodstockSource>
+        </ilmd></extension>
+<gdst:humanWelfarePolicy>2020-01-02</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:gdst:party:1122-bu5-9d3-9992.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-01-03</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+<disposition></disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:1122-bu5-9d3-9992.003</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-987666</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000004.LOT302</epcClass>
+<quantity>100</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+
+
+</extension>
+
+<gdst:productOwner>urn:gdst:party:1122-bu5-9d3-9992.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+<disposition></disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:1122-bu5-9d3-9992.003</id></bizLocation>
+
+
+
+<gdst:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-987666</cbvmda:certificationIdentification>
+</cbvmda:certification></gdst:certificationList>
+<cbvmda:transshipEndDate>owning_party</cbvmda:transshipEndDate>
+<cbvmda:landingEndDate>urn:gdst:party:1122-bu5-9d3-9992.0</cbvmda:landingEndDate>
+<cbvmda:landingStartDate>owning_party</cbvmda:landingStartDate>
+
+<extension><quantityList><quantityElement>
+<epcClass>urn:epc:id:pgln:0048000.1000005.SAL001</epcClass>
+<quantity>900</quantity>
+<uom>KGM</uom>
+</quantityElement></quantityList>
+
+
+</extension>
+
+<gdst:productOwner>urn:gdst:party:1122-bu5-9d3-9992.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>
+<ObjectEvent>
+<eventTime>2020-03-30</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+
+<action>OBSERVE</action>
+
+<bizStep>urn:epcglobal:cbv:bizstep:shipping</bizStep>
+<disposition></disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000002</id></bizLocation>
+
+
+
+
+
+
+<extension>
+
+
+</extension>
+
+<gdst:productOwner>urn:epc:id:pgln:8004030.0</gdst:productOwner>
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider> 
+</ObjectEvent>

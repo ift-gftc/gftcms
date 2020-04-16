@@ -1,0 +1,305 @@
+<extension>
+<TransformationEvent>
+<eventTime>2019-12-28</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+<bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:1122-bu5-9d3-9992.001</id></bizLocation>
+
+<inputQuantityList><quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000010.VEGGIES001</epcClass>
+<quantity>1000</quantity>
+<uom>KGM</uom>
+</quantityElement></inputQuantityList>
+<outputQuantityList><quantityElement> 
+  <epcClass>urn:epc:id:pgln:0048000.1000003.FEED_001</epcClass>
+  <quantity>900</quantity>
+  <uom>KGM</uom>
+</quantityElement></outputQuantityList>
+<ilmd>
+              <cbvmda:lotNumber>FEED_001</cbvmda:lotNumber>
+<cbvmda:productionDate>2019-12-28</cbvmda:productionDate>
+<cbvmda:itemExpirationDate>2021-12-29</cbvmda:itemExpirationDate>
+<cbvmda:proteinSource>Non-GMO</cbvmda:proteinSource>
+<cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+<cbvmda:bestBeforeDate>2021-12-29</cbvmda:bestBeforeDate>
+
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>              
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>              
+<cbvmda:certificationStandard>US Hatchery Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Hatchery Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-653213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>              
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+            </ilmd>
+<gdst:humanWelfarePolicy>WHO Human Welfare Policy</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:gdst:party:1122-bu5-9d3-9992.0</gdst:productOwner> 
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider>   
+</TransformationEvent>
+</extension>
+<extension>
+<TransformationEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+<bizStep>urn:gdst:bizStep:farmHarvest</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:1122-bu5-9d3-9992.003</id></bizLocation>
+
+<inputQuantityList><quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000003.FEED_001</epcClass>
+<quantity>900</quantity>
+<uom>KGM</uom>
+</quantityElement>
+<quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000004.LOT302</epcClass>
+<quantity>100</quantity>
+<uom>KGM</uom>
+</quantityElement></inputQuantityList>
+<outputQuantityList><quantityElement> 
+  <epcClass>urn:epc:id:pgln:0048000.1000005.SAL001</epcClass>
+  <quantity>900</quantity>
+  <uom>KGM</uom>
+</quantityElement></outputQuantityList>
+<ilmd>
+              <cbvmda:lotNumber>SAL001</cbvmda:lotNumber>
+<cbvmda:productionDate>2020-03-27</cbvmda:productionDate>
+<cbvmda:itemExpirationDate>2020-06-27</cbvmda:itemExpirationDate>
+<cbvmda:aquacultureMethod>Pens</cbvmda:aquacultureMethod>
+<cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+<cbvmda:bestBeforeDate>2020-06-27</cbvmda:bestBeforeDate>
+
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>              
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>              
+<cbvmda:certificationStandard>US Hatchery Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Hatchery Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-653213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>              
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+            </ilmd>
+<gdst:humanWelfarePolicy>WHO Human Welfare Policy</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:epc:id:pgln:8004030.00000</gdst:productOwner> 
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider>   
+</TransformationEvent>
+</extension>
+<extension>
+<TransformationEvent>
+<eventTime>2020-03-27</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+<bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:gdst:location:loc:7700-vc3-43d-1192.001</id></bizLocation>
+
+<inputQuantityList><quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000001.TUNA001</epcClass>
+<quantity>1000</quantity>
+<uom>KGM</uom>
+</quantityElement></inputQuantityList>
+<outputQuantityList><quantityElement> 
+  <epcClass>urn:epc:id:pgln:0048000.1000002.TUNA_FILLET_001</epcClass>
+  <quantity>750</quantity>
+  <uom>KGM</uom>
+</quantityElement></outputQuantityList>
+<ilmd>
+              <cbvmda:lotNumber>TUNA_FILLET_001</cbvmda:lotNumber>
+<cbvmda:productionDate>2020-03-27</cbvmda:productionDate>
+<cbvmda:itemExpirationDate>2020-06-27</cbvmda:itemExpirationDate>
+<cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+<cbvmda:bestBeforeDate>2020-06-27</cbvmda:bestBeforeDate>
+<cbvmda:vesselCatchInformationList><cbvmda:vesselCatchInformation>
+  <cbvmda:vesselName>Example Fishing Vessel</cbvmda:vesselName> 
+  <cbvmda:vesselID>IMO.1234567890</cbvmda:vesselID>
+  <gdst:vesselPublicRegistry>http://vessel-registry.com</gdst:vesselPublicRegistry>
+  <cbvmda:vesselFlagState>US</cbvmda:vesselFlagState>
+  <gdst:imoNumber>IMO.1234567890</gdst:imoNumber>
+</cbvmda:vesselCatchInformation></cbvmda:vesselCatchInformationList>
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>              
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>              
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+            </ilmd>
+<gdst:humanWelfarePolicy>WHO Human Welfare Policy</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:gdst:party:7700-vc3-43d-1192.0</gdst:productOwner> 
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider>   
+</TransformationEvent>
+</extension>
+<extension>
+<TransformationEvent>
+<eventTime>2020-03-29</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+<bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000002</id></bizLocation>
+
+<inputQuantityList><quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000005.SAL001</epcClass>
+<quantity>900</quantity>
+<uom>KGM</uom>
+</quantityElement></inputQuantityList>
+<outputQuantityList><quantityElement> 
+  <epcClass>urn:epc:id:pgln:0048000.1000006.SAL_FILLET_001</epcClass>
+  <quantity>600</quantity>
+  <uom>KGM</uom>
+</quantityElement></outputQuantityList>
+<ilmd>
+              <cbvmda:lotNumber>SAL_FILLET_001</cbvmda:lotNumber>
+<cbvmda:productionDate>2020-03-29</cbvmda:productionDate>
+<cbvmda:itemExpirationDate>2020-06-29</cbvmda:itemExpirationDate>
+<cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+<cbvmda:bestBeforeDate>2020-06-29</cbvmda:bestBeforeDate>
+
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>              
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>              
+<cbvmda:certificationStandard>US Hatchery Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Hatchery Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-653213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>              
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:processorLicense</gdst:certificateType>              
+<cbvmda:certificationStandard>Processor Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>Processors Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>301231</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>AUTH-12313</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+            </ilmd>
+<gdst:humanWelfarePolicy>WHO Human Welfare Policy</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:epc:id:pgln:8004030.0</gdst:productOwner> 
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider>   
+</TransformationEvent>
+</extension>
+<extension>
+<TransformationEvent>
+<eventTime>2020-03-29</eventTime> 
+<eventTimeZoneOffset></eventTimeZoneOffset>
+<baseExtension>
+  <eventID></eventID>
+</baseExtension>
+<bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+<disposition>urn:epcglobal:cbv:disp:active</disposition>
+
+<readPoint><id></id></readPoint>
+<bizLocation><id>urn:epc:id:sgln:8004030.000002</id></bizLocation>
+
+<inputQuantityList><quantityElement> 
+<epcClass>urn:epc:id:pgln:0048000.1000002.TUNA_FILLET_001</epcClass>
+<quantity>750</quantity>
+<uom>KGM</uom>
+</quantityElement></inputQuantityList>
+<outputQuantityList><quantityElement> 
+  <epcClass>urn:epc:id:pgln:0048000.1000007.CANS001</epcClass>
+  <quantity>500</quantity>
+  <uom>KGM</uom>
+</quantityElement></outputQuantityList>
+<ilmd>
+              <cbvmda:lotNumber>CANS001</cbvmda:lotNumber>
+<cbvmda:productionDate>2020-03-29</cbvmda:productionDate>
+<cbvmda:itemExpirationDate>2020-06-29</cbvmda:itemExpirationDate>
+<cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+<cbvmda:bestBeforeDate>2020-06-29</cbvmda:bestBeforeDate>
+
+<cbvmda:certificationList><cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCoC</gdst:certificateType>              
+<cbvmda:certificationStandard>MSC CoC Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>MSC</cbvmda:certificationAgency>
+<cbvmda:certificationValue>123</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>MSC-93131</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:harvestCert</gdst:certificateType>              
+<cbvmda:certificationStandard>US Hatchery Standard</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>US Hatchery Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>29</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>HC-653213</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:humanPolicy</gdst:certificateType>              
+<cbvmda:certificationStandard>WHO Human Welfare Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>WHO</cbvmda:certificationAgency>
+<cbvmda:certificationValue>38</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>WHO-1234567890</cbvmda:certificationIdentification>
+</cbvmda:certification>
+<cbvmda:certification>
+<gdst:certificateType>urn:gdst:certType:processorLicense</gdst:certificateType>              
+<cbvmda:certificationStandard>Processor Policy</cbvmda:certificationStandard> 
+<cbvmda:certificationAgency>Processors Authority</cbvmda:certificationAgency>
+<cbvmda:certificationValue>301231</cbvmda:certificationValue>
+<cbvmda:certificationIdentification>AUTH-12313</cbvmda:certificationIdentification>
+</cbvmda:certification></cbvmda:certificationList>
+            </ilmd>
+<gdst:humanWelfarePolicy>WHO Human Welfare Policy</gdst:humanWelfarePolicy>
+<gdst:productOwner>urn:epc:id:pgln:8004030.0</gdst:productOwner> 
+<cbvmda:informationProvider>urn:epc:id:pgln:8004030.0</cbvmda:informationProvider>   
+</TransformationEvent>
+</extension>
