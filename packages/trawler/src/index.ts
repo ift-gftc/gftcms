@@ -1,9 +1,9 @@
-export * from './business-document-header'
-export * from './epc-class-header'
-export * from './location-header'
-export * from './object-event'
-export * from './transformation-event'
-export * from './aggregation-event'
+export { createBusinessDocumentHeaderXml } from './business-document-header'
+export { createEpcClassXml } from './epc-class-header'
+export { createLocationHeaderXml } from './location-header'
+export { createObjectEventXml } from './object-event'
+export { createTransformationEventXml } from './transformation-event'
+export { createAggregationEventXml } from './aggregation-event'
 
 export const createTrawlerXml = ({
   bdhXml,
@@ -35,7 +35,7 @@ export const createTrawlerXml = ({
     <EventList>
       ${xmlList
         .sort((a, b) => a.date - b.date)
-        .map(i => i.xml)
+        .map((i) => i.xml)
         .join('\n')}
     </EventList>
   </EPCISBody>
