@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "test": "ava",
-    "watch": "tsc -w && ava --watch"
+    "watch": "concurrently \"tsc -w\"  \"ava --watch\""
   },
   "ava": {
     "typescript": {
@@ -19,8 +19,9 @@
     }
   },
   "devDependencies": {
-    "ava": "^3.7.0",
     "@ava/typescript": "^1.1.1",
+    "ava": "^3.7.0",
+    "concurrently": "^5.1.0",
     "typescript": "^3.8.3"
   }
 }
