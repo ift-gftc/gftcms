@@ -1,8 +1,20 @@
 import neatCsv from 'neat-csv'
+
 import { csvTransformationEventHeader } from './csv-header'
 import { parseCsvColumnList } from './utils'
+import { XmlListItem } from '.'
 
-export const createTransformationEventXml = async (data) => {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/TransformationEvent.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/TransformationEvent.xml)
+ * - Specs:   [click here](https://ift-gftc.github.io/doc.gdst/wild-events/on-vessel-processing/)
+ */
+export const createTransformationEventXml = async (
+  data: string | Buffer | import('stream').Readable
+): Promise<Array<XmlListItem>> => {
   const parsedData = (await neatCsv(data, {
     // headers: csvTransformationEventHeader,
     // skipLines: 4
@@ -26,7 +38,7 @@ export const createTransformationEventXml = async (data) => {
 
           ...rest
         },
-        index
+        index: number
       ) => {
         if (!bizStep || !eventTime || !informationProvider) return ''
 

@@ -1,9 +1,19 @@
 import neatCsv from 'neat-csv'
+
 import { DateTime } from 'luxon'
 import { csvBusinessDocumentHeader } from './csv-header'
 
-export const createBusinessDocumentHeaderXml = async (csvData) => {
-  const [data] = (await neatCsv(csvData, {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/BusinessDocumentHeader.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/BusinessDocumentHeader.xml)
+ */
+export const createBusinessDocumentHeaderXml = async (
+  data: string | Buffer | import('stream').Readable
+) => {
+  const [csvData] = (await neatCsv(data, {
     mapHeaders: ({ index }) => csvBusinessDocumentHeader[index] || null
   })) as any
 
@@ -14,7 +24,7 @@ export const createBusinessDocumentHeaderXml = async (csvData) => {
     receiverId,
     receiverName,
     receiverEmail
-  } = data
+  } = csvData
 
   if (
     !senderId ||

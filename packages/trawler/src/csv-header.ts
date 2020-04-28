@@ -1,3 +1,4 @@
+/** @ignore */
 export const csvAggregationEventHeader = [
   'eventId',
 
@@ -26,6 +27,7 @@ export const csvAggregationEventHeader = [
   'extension_certificationList_certification_certificationValue'
 ]
 
+/** @ignore */
 export const csvTransformationEventHeader = [
   'eventId',
 
@@ -74,6 +76,7 @@ export const csvTransformationEventHeader = [
   'ilmd_certificationList_certification_certificationValue'
 ]
 
+/** @ignore */
 export const csvObjectEventHeader = [
   'eventId',
 
@@ -141,6 +144,7 @@ export const csvObjectEventHeader = [
   'extension_quantityList_quantityElement_uom'
 ]
 
+/** @ignore */
 export const csvLocationHeader = [
   'informationProvider',
   'id',
@@ -168,6 +172,7 @@ export const csvLocationHeader = [
   'geofencePolygon_polygonPoint_value'
 ]
 
+/** @ignore */
 export const csvEpcClassHeader = [
   'informationProvider',
   'id',
@@ -181,6 +186,7 @@ export const csvEpcClassHeader = [
   'grossWeight_measurementUnit_code'
 ]
 
+/** @ignore */
 export const csvBusinessDocumentHeader = [
   'senderId',
   'senderName',

@@ -1,8 +1,18 @@
-import { csvLocationHeader } from './csv-header'
 import neatCsv from 'neat-csv'
+
+import { csvLocationHeader } from './csv-header'
 import { parseCsvColumnList } from './utils'
 
-export const createLocationHeaderXml = async (data) => {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/Location.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/Location.xml)
+ */
+export const createLocationHeaderXml = async (
+  data: string | Buffer | import('stream').Readable
+) => {
   const parsedData = (await neatCsv(data, {
     // headers: csvLocationHeader,
     // skipLines: 3

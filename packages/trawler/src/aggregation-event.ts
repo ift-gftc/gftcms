@@ -1,8 +1,19 @@
 import neatCsv from 'neat-csv'
+
 import { csvAggregationEventHeader } from './csv-header'
 import { parseCsvColumnList } from './utils'
+import { XmlListItem } from '.'
 
-export const createAggregationEventXml = async (data) => {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/AggregationEvent.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/AggregationEvent.xml)
+ */
+export const createAggregationEventXml = async (
+  data: string | Buffer | import('stream').Readable
+) : Promise<Array<XmlListItem>> => {
   const parsedData = (await neatCsv(data, {
     // headers: csvAggregationEventHeader,
     // skipLines: 5

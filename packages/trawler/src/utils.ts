@@ -1,3 +1,6 @@
+/**
+ * @ignore
+ */
 export const parseCsvColumnList = ({
   csvData,
   index,
@@ -31,5 +34,9 @@ export const parseCsvColumnList = ({
   return dataList
 }
 
+/**
+ * Parsing unit of measure string
+ * @param s String to parse
+ */
 export const parseUom = (s: string) =>
   s && s[0].toLowerCase() === 'l' ? 'LBR' : 'KGM'

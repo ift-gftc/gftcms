@@ -1,3 +1,7 @@
+/**
+ * trawler index exports all parser functions, as well as the aggregated xml generator
+ */
+
 export { createBusinessDocumentHeaderXml } from './business-document-header'
 export { createEpcClassXml } from './epc-class-header'
 export { createLocationHeaderXml } from './location-header'
@@ -5,12 +9,28 @@ export { createObjectEventXml } from './object-event'
 export { createTransformationEventXml } from './transformation-event'
 export { createAggregationEventXml } from './aggregation-event'
 
+export type XmlListItem = {
+  date: Date,
+  xml: string
+}
+
+export type TrawlerInput ={
+  bdhXml: string,
+  epcClassXml: string,
+  locationXml: string,
+  xmlList: Array<XmlListItem>
+}
+
+/**
+ * Creating EPCIS Xml document given the business document header, epc class list, location list
+ * and xml list of events.
+ */
 export const createTrawlerXml = ({
   bdhXml,
   epcClassXml,
   locationXml,
   xmlList
-}) => {
+}: TrawlerInput) => {
   return `<?xml version="1.0" encoding="UTF-8"?> 
 <epcis:EPCISDocument xmlns:epcis="urn:epcglobal:epcis:xsd:1" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -34,7 +54,7 @@ export const createTrawlerXml = ({
   <EPCISBody>
     <EventList>
       ${xmlList
-        .sort((a, b) => a.date - b.date)
+        .sort((a, b) => a.date.getTime() - b.date.getTime())
         .map((i) => i.xml)
         .join('\n')}
     </EventList>

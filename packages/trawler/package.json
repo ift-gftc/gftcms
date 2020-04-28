@@ -13,7 +13,7 @@
     "build": "tsc",
     "test": "ava",
     "watch": "concurrently \"tsc -w\"  \"ava --watch\"",
-    "docs": "typedoc --out docs src"
+    "docs": "typedoc --out docs src --readme none --mode file"
   },
   "ava": {
     "typescript": {

@@ -1,8 +1,19 @@
 import neatCsv from 'neat-csv'
+
 import { csvEpcClassHeader } from './csv-header'
 import { parseCsvColumnList, parseUom } from './utils'
 
-export const createEpcClassXml = async (data) => {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/EPCClass.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/EPCClass.xml)
+ * - Specs:   [click here](https://ift-gftc.github.io/doc.gdst/wild-events/master-data/)
+ */
+export const createEpcClassXml = async (
+  data: string | Buffer | import('stream').Readable
+) => {
   const parsedData = (await neatCsv(data, {
     mapHeaders: ({ index }) => csvEpcClassHeader[index] || null,
     skipLines: 2

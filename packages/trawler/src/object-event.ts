@@ -1,8 +1,20 @@
 import neatCsv from 'neat-csv'
+
 import { csvObjectEventHeader } from './csv-header'
 import { parseCsvColumnList } from './utils'
+import { XmlListItem } from '.'
 
-export const createObjectEventXml = async (data) => {
+/**
+ * @param data 
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/ObjectEvent.csv)
+ * 
+ * @returns
+ * - Example: [click here](https://github.com/ift-gftc/gftcms/blob/master/packages/trawler/mock/ObjectEvent.xml)
+ * - Specs:   [click here](https://ift-gftc.github.io/doc.gdst/wild-events/fishing-events/)
+ */
+export const createObjectEventXml = async (
+  data: string | Buffer | import('stream').Readable
+) : Promise<Array<XmlListItem>> => {
   const parsedData = (await neatCsv(data, {
     // headers: csvObjectEventHeader,
     // skipLines: 5
