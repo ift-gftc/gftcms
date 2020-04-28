@@ -6,7 +6,7 @@ At its core, `trawler` defines a human-readable, easy to use csv schema for supp
 
 # Documentation
 
-Visit [docs/index.](./docs/index.html)
+Visit [docs/index](https://ift-gftc.github.io/gftcms/packages/trawler/docs/index.html)
 
 # Usage
 
