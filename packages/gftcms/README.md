@@ -1,30 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# GFTC Microservices
 
-## Getting Started
+`gftcms` is created to expose ready-to-use services and tools that aid with software integration with the EPCIS supplychain ecosystem. A sample deployment is served at [gftcms.now.sh](http://gftcms.now.sh/). Following are available apis:
 
-First, run the development server:
+## POST /api/trawler
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The `/api/trawler` route exposes a ready-to-use deployment of the [trawler library](../trawler/README.md). It accepts a form-data map with the following key and plain-text CSV value pairs:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. `businessHeaderCsv`
+2. `epcClassCsv`
+3. `locationCsv`
+4. `objectEventCsv`
+5. `transformationEventCsv`
+6. `aggregationEventCsv`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+With all 6 CSVs supplied, the service returns an EPCIS XML document that can then be submited to EPCIS datastores.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![trawler-postman](./public/postman-example.png)
