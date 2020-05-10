@@ -8,11 +8,19 @@ At its core, `trawler` defines a human-readable, easy to use csv schema for supp
 
 Visit [docs/index](https://ift-gftc.github.io/gftcms/packages/trawler/docs/index.html)
 
+# Install
+
+```
+npm i -S @gftc/trawler
+```
+
 # Usage
 
 The excerpt below is taken from gftcms's [consumption of the library](https://github.com/ift-gftc/gftcms/blob/master/packages/gftcms/pages/api/trawler.ts).
 
 ```typescript
+
+// Import trawler generator functions:
 import {
   createTrawlerXml,
   createBusinessDocumentHeaderXml,
@@ -23,6 +31,7 @@ import {
   createAggregationEventXml
 } from '@gftc/trawler'
 
+// Use the generator to create the xml pieces for each csv form
 ...
 const [
   bdhXml,
@@ -40,6 +49,8 @@ const [
   createAggregationEventXml(aggregationEventCsv.value)
 ])
 
+
+// Combine the generator's result to create the final EPCIS document 
 const result = createTrawlerXml({
   bdhXml,
   epcClassXml,

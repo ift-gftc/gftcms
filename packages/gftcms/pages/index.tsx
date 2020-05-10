@@ -3,45 +3,39 @@ import Head from 'next/head'
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>GFTC Microservice</title>
+      <link rel="icon" href="/GDST_MobileLogo.png" />
     </Head>
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Welcome to <a href="https://github.com/ift-gftc/gftcms">gftcms!</a>
       </h1>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
+        <a
+          href="https://ift-gftc.github.io/gftcms/packages/gftcms/"
+          className="card">
           <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <p>Find in-depth information about gftcms features and API.</p>
         </a>
 
         <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          href="https://ift-gftc.github.io/gftcms/packages/trawler/docs/index.html"
+          className="card">
+          <h3>Trawler API &rarr;</h3>
+          <p>Learn more about the core CSV->EPCIS parser library.</p>
         </a>
 
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
+        <a href="https://ift-gftc.github.io/doc.gdst/" className="card">
+          <h3>Standard &rarr;</h3>
+          <p>More detail about recommendation from GDST.</p>
+        </a>
+
+        <a href="https://louisgv.github.io/nemo/" className="card">
+          <h3>Nemo &rarr;</h3>
           <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
+            Explore an example microservice integration in a web app.
           </p>
         </a>
       </div>
@@ -51,9 +45,8 @@ const Home = () => (
       <a
         href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
+        rel="noopener noreferrer">
+        Created by <img width="180px" src="/GDST_Logo.png" alt="GDST Logo" />
       </a>
     </footer>
 
