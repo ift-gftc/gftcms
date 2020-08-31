@@ -11,10 +11,11 @@ import {
 import { parse } from '@multisolution/multipart-parser'
 
 import nextConnect from 'next-connect'
+import { NextApiRequest, NextApiResponse } from 'next'
 
 const handler = nextConnect()
 
-handler.post(async (req, res) => {
+handler.post(async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const data = parse(req.body)
 
