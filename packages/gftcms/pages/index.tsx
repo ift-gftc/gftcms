@@ -24,7 +24,7 @@ const Home = () => (
           href="https://ift-gftc.github.io/gftcms/packages/trawler/docs/index.html"
           className="card">
           <h3>Trawler API &rarr;</h3>
-          <p>Learn more about the core CSV->EPCIS parser library.</p>
+          <p>Learn more about the core CSV-&gt;EPCIS parser library.</p>
         </a>
 
         <a href="https://ift-gftc.github.io/doc.gdst/" className="card">
@@ -34,9 +34,7 @@ const Home = () => (
 
         <a href="https://louisgv.github.io/nemo/" className="card">
           <h3>Nemo &rarr;</h3>
-          <p>
-            Explore an example microservice integration in a web app.
-          </p>
+          <p>Explore an example microservice integration in a web app.</p>
         </a>
       </div>
     </main>
