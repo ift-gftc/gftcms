@@ -1,6 +1,6 @@
 {
   "name": "@gftc/trawler",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Trawler library to parse CSV to EPCIS XML",
   "files": [
     "lib"
