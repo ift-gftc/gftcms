@@ -13,7 +13,7 @@ export const parseCsvColumnList = ({
 
   if (itemKeyList.filter((k) => !!currentData[k]).length === 0) return dataList
 
-  if (index < csvData.length - 1) {
+  if (index < csvData.length) {
     let j = 0
     do {
       const nextItem = csvData[index + j]
